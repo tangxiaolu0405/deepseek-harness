@@ -8,3 +8,15 @@
 | `packages/host/apiproxy/package.json` | 从 `dependencies` 移除 `@deepseek-ai/cordis`（`peerDependencies` / `devDependencies` 中保留） |
 | `pnpm-lock.yaml` | 删除 |
 | `README.zh.md` / `README.md` | 源码运行示例增加 npm 回退命令：`npm run build --workspace=@deepseek-ai/dsh-web-frontend`、`npm run dsh -- web` |
+
+## 用 npm 构建（本 fork）
+
+其他人可以用 npm 直接构建本项目：
+
+```sh
+git clone https://github.com/tangxiaolu0405/deepseek-harness.git
+cd deepseek-harness
+npm install
+npm run build
+npm run dsh -- web
+```
