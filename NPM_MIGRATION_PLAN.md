@@ -20,6 +20,7 @@
 | `package.json` | `hygiene` 链：`pnpm run` → `npm run` | 让门禁链也走 npm |
 | `packages/host/apiproxy/package.json` | 从 `dependencies` 移除 `@deepseek-ai/cordis` | 它仍保留在 `peerDependencies` 和 `devDependencies` 中；npm workspaces 从那里解析，避免导致 `npm install` 失败的重复直接依赖 |
 | `pnpm-lock.yaml` | 删除 | 不再使用 pnpm 锁文件 |
+| `README.zh.md` / `README.md` | 从源码运行示例补充 npm 回退命令：`npm run build --workspace=@deepseek-ai/dsh-web-frontend` 和 `npm run dsh -- web` | 没有 pnpm 时也能用 npm 构建并运行 `dsh` |
 
 提交：`e2d7531ef3` — `chore: switch package manager from pnpm to npm`（3 个文件变更，+10 / −19820，含锁文件删除）。
 

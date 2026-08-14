@@ -4,11 +4,11 @@ English | [中文](README.zh.md)
 
 DeepSeek Harness (`dsh`) is an open-source agent harness developed by [DeepSeek AI](https://deepseek.com).
 
-It uses an architecture where **everything is a plugin**, and is powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [_A Programming Paradigm for Spatiotemporal Composability_](https://github.com/cordiverse/paper).
+It uses an architecture where **everything is a plugin**, and is powered by [Cordis](https://github.com/cordiverse/cordis), whose design is described in [*A Programming Paradigm for Spatiotemporal Composability*](https://github.com/cordiverse/paper).
 
 ## Developer preview
 
-DeepSeek Harness is currently in _developer preview_ and is iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.**
+DeepSeek Harness is currently in *developer preview* and is iterating rapidly. **THERE WILL BE COMPATIBILITY-BREAKING CHANGES.**
 
 ## Run
 
@@ -30,14 +30,14 @@ To run from a repository checkout:
 git clone https://github.com/deepseek-ai/deepseek-harness.git
 cd deepseek-harness
 pnpm install
-pnpm run build
-pnpm dsh web
+pnpm run build  # npm only: npm run build --workspace=@deepseek-ai/dsh-web-frontend
+pnpm dsh web # npm only: npm run dsh -- web
 ```
 
 ## Community and support
 
 - Feel free to submit feedback or bug reports through [GitHub Discussions](https://github.com/deepseek-ai/deepseek-harness/discussions).
-- Add the [`dsh-plugin`](https://github.com/topics/dsh-plugin) topic to your plugin repository for discoverability.
+- Add the [dsh-plugin](https://github.com/topics/dsh-plugin) topic to your plugin repository for discoverability.
 - Join <a href="https://discord.gg/Ycq5dCaS4">DeepSeek Harness Discord community</a>.
 
 ## Contributing
